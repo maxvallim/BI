@@ -1,0 +1,43 @@
+ID_Cliente,Nome_Cliente,Cidade,Estado,Segmento
+1,João Silva,Jundiaí,SP,Varejo
+2,Juliana Costa,Jundiaí,SP,Varejo
+3,Carlos Lima,São Paulo,SP,Educação
+4,Ricardo Oliveira,Campinas,SP,Educação
+5,João Silva,Piracicaba,SP,Educação
+6,Ana Santos,Sorocaba,SP,Varejo
+7,Fernanda Rocha,Campinas,SP,Varejo
+8,Bruna Melo,Piracicaba,SP,Varejo
+9,Fernanda Rocha,Piracicaba,SP,Educação
+10,Camila Souza,Jundiaí,SP,Educação
+11,Fernanda Rocha,Sorocaba,SP,Corporativo
+12,Juliana Costa,Piracicaba,SP,Varejo
+13,Camila Souza,São Paulo,SP,Corporativo
+14,Juliana Costa,Ribeirão Preto,SP,Varejo
+15,Pedro Alves,São Paulo,SP,Varejo
+16,Marcos Pereira,Campinas,SP,Varejo
+17,Pedro Alves,Ribeirão Preto,SP,Educação
+18,Ana Santos,Ribeirão Preto,SP,Educação
+19,Lucas Martins,Sorocaba,SP,Varejo
+20,João Silva,Sorocaba,SP,Educação
+21,Ricardo Oliveira,Ribeirão Preto,SP,Educação
+22,Bruna Melo,Ribeirão Preto,SP,Varejo
+23,João Silva,Jundiaí,SP,Varejo
+24,Fernanda Rocha,Jundiaí,SP,Corporativo
+25,Fernanda Rocha,Campinas,SP,Varejo
+26,Juliana Costa,Sorocaba,SP,Corporativo
+27,Pedro Alves,Jundiaí,SP,Varejo
+28,Pedro Alves,Ribeirão Preto,SP,Varejo
+29,Juliana Costa,Jundiaí,SP,Educação
+30,Ricardo Oliveira,Jundiaí,SP,Varejo
+31,Ricardo Oliveira,Piracicaba,SP,Varejo
+32,Camila Souza,Piracicaba,SP,Varejo
+33,Patricia Gomes,São Paulo,SP,Corporativo
+34,Ricardo Oliveira,Ribeirão Preto,SP,Educação
+35,Fernanda Rocha,Piracicaba,SP,Educação
+36,Ana Santos,Ribeirão Preto,SP,Varejo
+37,Pedro Alves,Campinas,SP,Corporativo
+38,João Silva,Ribeirão Preto,SP,Varejo
+39,Camila Souza,Piracicaba,SP,Corporativo
+40,Ricardo Oliveira,São Paulo,SP,Corporativo
+41,ANA SANTOS,SAO PAULO,SP,Varejo
+42,João Silva ,Sao Paulo,SP,Varejo

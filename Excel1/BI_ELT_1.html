@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Roteiro de BI - ELT, Tabela Dinâmica e KPIs</title>
+
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 20px;
+        color:#111;
+        background:#fff;
+        line-height:1.7;
+    }
+
+    h1{
+        text-align:center;
+        border-bottom:3px solid #000;
+        padding-bottom:15px;
+        margin-bottom:40px;
+    }
+
+    h2{
+        border-left:6px solid #000;
+        padding-left:12px;
+        margin-top:40px;
+    }
+
+    h3{
+        margin-top:25px;
+    }
+
+    .box{
+        border:1px solid #000;
+        padding:15px;
+        margin:15px 0;
+        background:#f8f8f8;
+    }
+
+    .fluxo{
+        text-align:center;
+        font-weight:bold;
+        font-size:18px;
+        margin:30px 0;
+        line-height:2;
+    }
+
+    code{
+        background:#eee;
+        padding:2px 6px;
+        border-radius:3px;
+    }
+
+    .kpi{
+        border:1px solid #000;
+        padding:15px;
+        margin:15px 0;
+    }
+
+    ul li{
+        margin-bottom:8px;
+    }
+
+    footer{
+        margin-top:50px;
+        border-top:2px solid #000;
+        padding-top:20px;
+        text-align:center;
+        font-style:italic;
+    }
+</style>
+
+</head>
+<body>
+
+<h1>BUSINESS INTELLIGENCE<br>ELT + Tabela Dinâmica + KPIs</h1>
+
+<h2>Objetivo</h2>
+
+<p>
+Transformar dados brutos em informações úteis para apoiar a tomada de decisão.
+</p>
+
+<div class="fluxo">
+Base de Dados<br>
+↓<br>
+Power Query (ELT)<br>
+↓<br>
+Tabela Tratada<br>
+↓<br>
+Tabela Dinâmica<br>
+↓<br>
+KPIs<br>
+↓<br>
+Tomada de Decisão
+</div>
+
+<h2>Parte 1 - Conhecendo a Base de Dados</h2>
+
+<p>A planilha contém os seguintes campos:</p>
+
+<ul>
+    <li>Data</li>
+    <li>Cliente</li>
+    <li>Cidade</li>
+    <li>Produto</li>
+    <li>Categoria</li>
+    <li>Quantidade</li>
+    <li>Valor Unitário</li>
+</ul>
+
+<div class="box">
+Pergunta inicial:
+<br><br>
+<strong>Podemos confiar nesses dados exatamente como estão?</strong>
+</div>
+
+<p>Ao analisar a base, observamos problemas de qualidade de dados:</p>
+
+<ul>
+    <li>Datas em formatos diferentes</li>
+    <li>Clientes escritos de formas diferentes</li>
+    <li>Cidades com e sem acentuação</li>
+    <li>Categorias inconsistentes</li>
+    <li>Registros duplicados</li>
+</ul>
+
+<h2>Parte 2 - ELT com Power Query</h2>
+
+<h3>Passo 1 - Carregar os dados</h3>
+
+<p>
+Selecione a tabela e utilize:
+</p>
+
+<div class="box">
+Dados → De Tabela/Intervalo
+</div>
+
+<p>O Excel abrirá o Editor do Power Query.</p>
+
+<h3>Passo 2 - Corrigir as Datas</h3>
+
+<p>Converter toda a coluna Data para o tipo:</p>
+
+<div class="box">
+Tipo de Dados → Data
+</div>
+
+<h3>Passo 3 - Padronizar Clientes</h3>
+
+<p>Exemplos encontrados:</p>
+
+<div class="box">
+Ana Santos<br>
+ANA SANTOS<br>
+Ana Santos
+</div>
+
+<p>Padronizar utilizando:</p>
+
+<div class="box">
+Transformar → Formatar → Primeira Letra de Cada Palavra Maiúscula
+</div>
+
+<h3>Passo 4 - Padronizar Cidades</h3>
+
+<p>Exemplos:</p>
+
+<div class="box">
+São Paulo<br>
+SAO PAULO<br>
+Ribeirão Preto<br>
+Ribeirao Preto
+</div>
+
+<p>Padronizar nomes e corrigir diferenças de grafia.</p>
+
+<h3>Passo 5 - Padronizar Categoria</h3>
+
+<p>Exemplos:</p>
+
+<div class="box">
+Informática<br>
+informatica<br>
+Informatica
+</div>
+
+<p>Utilizar Substituir Valores para manter apenas:</p>
+
+<div class="box">
+Informática
+</div>
+
+<h3>Passo 6 - Remover Duplicidades</h3>
+
+<div class="box">
+Remover Linhas → Remover Duplicadas
+</div>
+
+<h3>Passo 7 - Criar Coluna de Faturamento</h3>
+
+<p>Criar uma nova coluna:</p>
+
+<div class="box">
+Faturamento = Quantidade × Valor Unitário
+</div>
+
+<p>Fórmula:</p>
+
+<div class="box">
+=[Quantidade] * [Valor Unitario]
+</div>
+
+<h3>Passo 8 - Fechar e Carregar</h3>
+
+<div class="box">
+Página Inicial → Fechar e Carregar
+</div>
+
+<p>
+Agora os dados estão prontos para análise.
+</p>
+
+<h2>Parte 3 - Criando a Tabela Dinâmica</h2>
+
+<p>Selecione a tabela tratada.</p>
+
+<div class="box">
+Inserir → Tabela Dinâmica
+</div>
+
+<p>Crie a tabela dinâmica em uma nova planilha.</p>
+
+<h2>Parte 4 - Construção dos KPIs</h2>
+
+<div class="kpi">
+<h3>KPI 1 - Faturamento Total</h3>
+<p><strong>Valores:</strong> Soma de Faturamento</p>
+<p><strong>Pergunta:</strong> Quanto a empresa vendeu?</p>
+</div>
+
+<div class="kpi">
+<h3>KPI 2 - Faturamento por Cidade</h3>
+<p><strong>Linhas:</strong> Cidade</p>
+<p><strong>Valores:</strong> Soma de Faturamento</p>
+<p><strong>Pergunta:</strong> Qual cidade gera mais receita?</p>
+</div>
+
+<div class="kpi">
+<h3>KPI 3 - Faturamento por Produto</h3>
+<p><strong>Linhas:</strong> Produto</p>
+<p><strong>Valores:</strong> Soma de Faturamento</p>
+<p><strong>Pergunta:</strong> Qual produto gera mais receita?</p>
+</div>
+
+<div class="kpi">
+<h3>KPI 4 - Quantidade Vendida por Produto</h3>
+<p><strong>Linhas:</strong> Produto</p>
+<p><strong>Valores:</strong> Soma da Quantidade</p>
+<p><strong>Pergunta:</strong> Qual produto possui maior giro?</p>
+</div>
+
+<div class="kpi">
+<h3>KPI 5 - Ranking de Clientes</h3>
+<p><strong>Linhas:</strong> Cliente</p>
+<p><strong>Valores:</strong> Soma de Faturamento</p>
+<p><strong>Pergunta:</strong> Quem são os melhores clientes?</p>
+</div>
+
+<div class="kpi">
+<h3>KPI 6 - Faturamento por Mês</h3>
+<p><strong>Linhas:</strong> Data</p>
+<p><strong>Agrupamento:</strong> Meses</p>
+<p><strong>Valores:</strong> Soma de Faturamento</p>
+<p><strong>Pergunta:</strong> Existe sazonalidade nas vendas?</p>
+</div>
+
+<h2>Parte 5 - Transformando Dados em Informação</h2>
+
+<p>
+Criar a tabela dinâmica não é o objetivo final.
+</p>
+
+<p>
+O analista deve interpretar os resultados e responder questões como:
+</p>
+
+<ul>
+    <li>Qual produto gera mais faturamento?</li>
+    <li>Qual cidade apresenta melhor desempenho?</li>
+    <li>Quem são os principais clientes?</li>
+    <li>Existem meses com crescimento ou queda nas vendas?</li>
+    <li>Quais oportunidades ou problemas podem ser identificados?</li>
+</ul>
+
+<h2>Conclusão</h2>
+
+<div class="box">
+<p>
+Dados sozinhos não geram valor.
+</p>
+
+<p>
+O BI transforma dados em informação para auxiliar a tomada de decisão.
+</p>
+
+<p>
+A Tabela Dinâmica mostra o que aconteceu.
+<br>
+Os KPIs mostram o que é importante.
+<br>
+O analista descobre por que aconteceu e o que fazer a seguir.
+</p>
+</div>
+
+<div class="links">
+<h2>Dados</h2>
+<ul style="list-style-type:none; padding-left:0;">
+<li><br/><a href="Base_Dados_BI_Atividade01.xlsx" target="_blank">Planilha 1</a><br/></li>
+</ul>
+</div>
+
+<footer>
+Tecnologia da Informação e BI<br>
+Prof. Max Streicher Vallim
+</footer>
+
+</body>
+</html>

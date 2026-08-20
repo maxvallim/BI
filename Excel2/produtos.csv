@@ -1,0 +1,9 @@
+ID_Produto,Produto,Categoria,Fornecedor,Custo
+1,Notebook,Informática,Dell,2800
+2,Monitor,Informática,LG,650
+3,Mouse,Periféricos,Logitech,35
+4,Teclado,Periféricos,Microsoft,45
+5,Impressora,Informática,HP,700
+6,SSD 1TB,Armazenamento,Kingston,280
+7,Notebook Gamer,informatica,Lenovo,4200
+8,Webcam,Perifericos,Logitech,90

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case BI - TechMax</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.7;
+}
+
+h1{
+    text-align:center;
+    border-bottom:3px solid #000;
+    padding-bottom:20px;
+}
+
+h2{
+    margin-top:40px;
+    border-left:6px solid #000;
+    padding-left:10px;
+}
+
+.box{
+    border:1px solid #000;
+    background:#f5f5f5;
+    padding:15px;
+    margin:15px 0;
+}
+
+.kpi{
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:12px;
+}
+
+.fluxo{
+    text-align:center;
+    font-weight:bold;
+    padding:25px;
+    border:1px solid #000;
+    margin:20px 0;
+}
+
+ul li{
+    margin-bottom:6px;
+}
+
+footer{
+    margin-top:50px;
+    border-top:2px solid #000;
+    text-align:center;
+    padding-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>CASE BI - TECHMAX</h1>
+
+<p>
+A TechMax comercializa equipamentos de informática através de lojas físicas e e-commerce.
+A diretoria deseja entender melhor os resultados da empresa através de indicadores de desempenho (KPIs).
+</p>
+
+<h2>Objetivo</h2>
+
+<p>
+Importar dados de múltiplas fontes, realizar o processo de ELT utilizando Power Query
+e gerar informações através de Tabelas Dinâmicas.
+</p>
+
+<div class="fluxo">
+Arquivos CSV<br>
+↓<br>
+Power Query (ELT)<br>
+↓<br>
+Tabela Consolidada<br>
+↓<br>
+Tabela Dinâmica<br>
+↓<br>
+KPIs Gerenciais
+</div>
+
+<h2>Arquivos Disponíveis</h2>
+
+<div class="box">
+<strong>clientes.csv</strong>
+
+<ul>
+<li>ID_Cliente</li>
+<li>Nome_Cliente</li>
+<li>Cidade</li>
+<li>Estado</li>
+<li>Segmento</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>produtos.csv</strong>
+
+<ul>
+<li>ID_Produto</li>
+<li>Produto</li>
+<li>Categoria</li>
+<li>Fornecedor</li>
+<li>Custo</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>vendas.csv</strong>
+
+<ul>
+<li>ID_Venda</li>
+<li>Data</li>
+<li>ID_Cliente</li>
+<li>ID_Produto</li>
+<li>Quantidade</li>
+<li>Valor_Venda</li>
+<li>Canal</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>metas.csv</strong>
+
+<ul>
+<li>Mês</li>
+<li>Meta_Faturamento</li>
+<li>Meta_Quantidade</li>
+</ul>
+</div>
+
+<h2>Etapa 1 - Importação dos Dados</h2>
+
+<p>Importe os arquivos CSV utilizando:</p>
+
+<div class="box">
+Dados → Obter Dados → De Texto/CSV
+</div>
+
+<p>
+Ao final, você deverá possuir quatro consultas no Power Query.
+</p>
+
+<h2>Etapa 2 - Limpeza dos Dados</h2>
+
+<p>Realize as correções necessárias:</p>
+
+<ul>
+<li>Remover registros duplicados.</li>
+<li>Corrigir cidades com e sem acentuação.</li>
+<li>Corrigir categorias com grafias diferentes.</li>
+<li>Padronizar nomes de clientes.</li>
+<li>Tratar dados nulos ou vazios.</li>
+<li>Verificar datas inválidas.</li>
+</ul>
+
+<h2>Etapa 3 - Mesclar Consultas</h2>
+
+<h3>Vendas + Clientes</h3>
+
+<div class="box">
+Relacionar pelo campo ID_Cliente.
+</div>
+
+<p>Adicionar:</p>
+
+<ul>
+<li>Nome do Cliente</li>
+<li>Cidade</li>
+<li>Estado</li>
+<li>Segmento</li>
+</ul>
+
+<h3>Vendas + Produtos</h3>
+
+<div class="box">
+Relacionar pelo campo ID_Produto.
+</div>
+
+<p>Adicionar:</p>
+
+<ul>
+<li>Produto</li>
+<li>Categoria</li>
+<li>Fornecedor</li>
+<li>Custo</li>
+</ul>
+
+<h2>Etapa 4 - Criar Colunas Calculadas</h2>
+
+<h3>Faturamento</h3>
+
+<div class="box">
+Quantidade × Valor_Venda
+</div>
+
+<h3>Custo Total</h3>
+
+<div class="box">
+Quantidade × Custo
+</div>
+
+<h3>Lucro</h3>
+
+<div class="box">
+Faturamento − Custo Total
+</div>
+
+<h2>Etapa 5 - Carregamento</h2>
+
+<div class="box">
+Página Inicial → Fechar e Carregar
+</div>
+
+<p>
+Os dados tratados serão utilizados para criar os relatórios.
+</p>
+
+<h2>KPIs Obrigatórios</h2>
+
+<div class="kpi">
+<strong>KPI 1 - Faturamento Total</strong><br>
+Quanto a empresa vendeu?
+</div>
+
+<div class="kpi">
+<strong>KPI 2 - Lucro Total</strong><br>
+Quanto a empresa lucrou?
+</div>
+
+<div class="kpi">
+<strong>KPI 3 - Faturamento por Cidade</strong><br>
+Quais cidades geram mais receita?
+</div>
+
+<div class="kpi">
+<strong>KPI 4 - Faturamento por Categoria</strong><br>
+Qual categoria vende mais?
+</div>
+
+<div class="kpi">
+<strong>KPI 5 - Lucro por Produto</strong><br>
+Qual produto é mais rentável?
+</div>
+
+<div class="kpi">
+<strong>KPI 6 - Canal de Venda</strong><br>
+Loja Física ou E-commerce?
+</div>
+
+<div class="kpi">
+<strong>KPI 7 - Top 10 Clientes</strong><br>
+Quem são os principais clientes?
+</div>
+
+<div class="kpi">
+<strong>KPI 8 - Meta x Realizado</strong><br>
+As metas foram atingidas?
+</div>
+
+<h2>Organização das Abas</h2>
+
+<ul>
+<li>BASE_CONSOLIDADA</li>
+<li>KPI_FATURAMENTO</li>
+<li>KPI_LUCRO</li>
+<li>KPI_CIDADES</li>
+<li>KPI_PRODUTOS</li>
+<li>KPI_CLIENTES</li>
+<li>KPI_METAS</li>
+<li>DASHBOARD</li>
+</ul>
+
+<h2>Desafio Final</h2>
+
+<p>
+Após concluir as análises, responda:
+</p>
+
+<ol>
+<li>Qual cidade apresenta maior faturamento?</li>
+<li>Qual produto gera maior lucro?</li>
+<li>Qual categoria se destaca?</li>
+<li>Qual canal de vendas é mais eficiente?</li>
+<li>A empresa atingiu as metas definidas?</li>
+<li>Quais recomendações você faria para a diretoria?</li>
+</ol>
+
+<h2>Entregáveis</h2>
+
+<div class="box">
+<ul>
+<li>Power Query configurado.</li>
+<li>Base consolidada.</li>
+<li>Tabelas Dinâmicas.</li>
+<li>KPIs calculados.</li>
+<li>Dashboard final.</li>
+<li>Conclusões gerenciais.</li>
+</ul>
+</div>
+
+<h2>Critérios de Avaliação</h2>
+
+<div class="box">
+<ul>
+<li>Importação correta dos arquivos CSV.</li>
+<li>Tratamento e padronização dos dados.</li>
+<li>Mesclagem correta das consultas.</li>
+<li>Criação das métricas solicitadas.</li>
+<li>Organização das Tabelas Dinâmicas.</li>
+<li>Qualidade da análise apresentada.</li>
+<li>Clareza das conclusões gerenciais.</li>
+</ul>
+</div>
+
+<h2>Reflexão Final</h2>
+
+<div class="box">
+
+<p>
+Business Intelligence não é apenas criar gráficos ou dashboards.
+</p>
+
+<p>
+O verdadeiro valor está em transformar dados dispersos em informações úteis para apoiar decisões.
+</p>
+
+<p>
+Antes da análise existe um trabalho fundamental de integração, limpeza e validação dos dados.
+</p>
+
+<p>
+Dados → Informação → Análise → Decisão → Resultado
+</p>
+
+</div>
+
+<div class="links">
+<h2>Dados</h2>
+<ul style="list-style-type:none; padding-left:0;">
+<li><br/><a href="clientes.csv" target="_blank">Clientes</a><br/></li>
+<li><br/><a href="metas.csv" target="_blank">Metas</a><br/></li>
+<li><br/><a href="produtos.csv" target="_blank">Produtos</a><br/></li>
+<li><br/><a href="vendas.csv" target="_blank">Vendas</a><br/></li>
+
+</ul>
+</div>
+
+<footer>
+Tecnologia da Informação e BI<br>
+Prof. Max Streicher Vallim
+</footer>
+
+</body>
+</html>
