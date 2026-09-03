@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Power BI - TechMax</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1200px;
+    margin:0 auto;
+    padding:40px;
+    background:#ffffff;
+    color:#222;
+    line-height:1.7;
+}
+
+h1{
+    text-align:center;
+    border-bottom:3px solid #000;
+    padding-bottom:20px;
+}
+
+h2{
+    margin-top:40px;
+    border-left:6px solid #000;
+    padding-left:10px;
+}
+
+h3{
+    margin-top:25px;
+}
+
+.box{
+    border:1px solid #000;
+    background:#f5f5f5;
+    padding:15px;
+    margin:15px 0;
+}
+
+.etapa{
+    border:1px solid #ccc;
+    padding:15px;
+    margin-bottom:15px;
+}
+
+.fluxo{
+    text-align:center;
+    font-weight:bold;
+    border:1px solid #000;
+    padding:25px;
+    margin:20px 0;
+}
+
+ul li{
+    margin-bottom:6px;
+}
+
+footer{
+    margin-top:50px;
+    border-top:2px solid #000;
+    text-align:center;
+    padding-top:20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>CASE POWER BI - TECHMAX</h1>
+
+<p>
+A TechMax atua na comercialização de equipamentos de informática por meio de lojas físicas e e-commerce.
+A diretoria deseja implantar um painel de Business Intelligence para acompanhar o desempenho comercial da empresa e apoiar a tomada de decisão.
+</p>
+
+<h2>Objetivo</h2>
+
+<p>
+Utilizar o Power BI para importar, tratar, relacionar e visualizar dados corporativos,
+transformando informações operacionais em indicadores gerenciais.
+</p>
+
+<div class="fluxo">
+Arquivos CSV<br>
+↓<br>
+Power Query<br>
+↓<br>
+Tratamento dos Dados<br>
+↓<br>
+Modelo Relacional<br>
+↓<br>
+Visualizações<br>
+↓<br>
+Dashboard Executivo
+</div>
+
+<h2>Arquivos Disponíveis</h2>
+
+<div class="box">
+<strong>clientes.csv</strong>
+<ul>
+<li>ID_Cliente</li>
+<li>Nome_Cliente</li>
+<li>Cidade</li>
+<li>Estado</li>
+<li>Segmento</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>produtos.csv</strong>
+<ul>
+<li>ID_Produto</li>
+<li>Produto</li>
+<li>Categoria</li>
+<li>Fornecedor</li>
+<li>Custo</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>vendas.csv</strong>
+<ul>
+<li>ID_Venda</li>
+<li>Data</li>
+<li>ID_Cliente</li>
+<li>ID_Produto</li>
+<li>Quantidade</li>
+<li>Valor_Venda</li>
+<li>Canal</li>
+</ul>
+</div>
+
+<div class="box">
+<strong>metas.csv</strong>
+<ul>
+<li>Mês</li>
+<li>Meta_Faturamento</li>
+<li>Meta_Quantidade</li>
+</ul>
+</div>
+
+<h2>Etapa 1 - Importação dos Dados</h2>
+
+<div class="etapa">
+<p>Importe os quatro arquivos CSV utilizando:</p>
+
+<div class="box">
+Página Inicial → Obter Dados → Texto/CSV
+</div>
+
+<p>
+Ao final da importação deverão existir quatro tabelas carregadas no Power BI:
+</p>
+
+<ul>
+<li>Clientes</li>
+<li>Produtos</li>
+<li>Vendas</li>
+<li>Metas</li>
+</ul>
+</div>
+
+<h2>Etapa 2 - Conhecendo os Dados</h2>
+
+<div class="etapa">
+<p>
+Antes de iniciar qualquer tratamento, explore os dados disponíveis.
+</p>
+
+<p>Responda:</p>
+
+<ul>
+<li>Quantos registros existem em cada tabela?</li>
+<li>Quais são os campos de cada arquivo?</li>
+<li>Existem valores vazios?</li>
+<li>Existem registros aparentemente duplicados?</li>
+<li>Há diferenças de grafia?</li>
+</ul>
+</div>
+
+<h2>Etapa 3 - Tratamento dos Dados</h2>
+
+<div class="etapa">
+
+<h3>Clientes</h3>
+
+<p>
+Padronize os nomes dos clientes e das cidades.
+</p>
+
+<p>Exemplos de inconsistências:</p>
+
+<div class="box">
+São Paulo<br>
+Sao Paulo<br>
+SAO PAULO
+</div>
+
+<div class="box">
+Ana Santos<br>
+ANA SANTOS
+</div>
+
+<p>
+Também verifique espaços extras e possíveis registros duplicados.
+</p>
+
+<h3>Produtos</h3>
+
+<p>
+Padronize as categorias de produtos.
+</p>
+
+<div class="box">
+Informática<br>
+informatica
+</div>
+
+<div class="box">
+Periféricos<br>
+Perifericos
+</div>
+
+<h3>Vendas</h3>
+
+<p>Verifique:</p>
+
+<ul>
+<li>Datas ausentes</li>
+<li>Registros duplicados</li>
+<li>Campos inconsistentes</li>
+</ul>
+
+</div>
+
+<h2>Etapa 4 - Criando os Relacionamentos</h2>
+
+<div class="etapa">
+
+<p>
+Acesse a exibição Modelo e crie os relacionamentos necessários.
+</p>
+
+<div class="box">
+
+CLIENTES<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+VENDAS<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+&nbsp;&nbsp;&nbsp;&nbsp;│<br>
+PRODUTOS
+
+</div>
+
+<p>
+Utilize:
+</p>
+
+<ul>
+<li>ID_Cliente</li>
+<li>ID_Produto</li>
+</ul>
+
+<p>
+Verifique se os relacionamentos ficaram ativos.
+</p>
+
+</div>
+
+<h2>Etapa 5 - Construindo os Primeiros Visuais</h2>
+
+<div class="etapa">
+
+<h3>Cartões</h3>
+
+<p>Crie cartões apresentando:</p>
+
+<ul>
+<li>Quantidade de Vendas</li>
+<li>Quantidade Total Vendida</li>
+<li>Total de Clientes</li>
+<li>Total de Produtos</li>
+</ul>
+
+</div>
+
+<h2>Etapa 6 - Página Clientes</h2>
+
+<div class="etapa">
+
+<p>
+Crie uma nova página chamada:
+</p>
+
+<div class="box">
+Clientes
+</div>
+
+<p>Insira os seguintes gráficos:</p>
+
+<ul>
+<li>Vendas por Cidade</li>
+<li>Clientes por Segmento</li>
+<li>Clientes por Cidade</li>
+</ul>
+
+<p>
+Analise quais cidades possuem maior volume de negócios.
+</p>
+
+</div>
+
+<h2>Etapa 7 - Página Produtos</h2>
+
+<div class="etapa">
+
+<p>
+Crie uma nova página chamada:
+</p>
+
+<div class="box">
+Produtos
+</div>
+
+<p>Insira:</p>
+
+<ul>
+<li>Vendas por Produto</li>
+<li>Vendas por Categoria</li>
+<li>Produtos por Fornecedor</li>
+</ul>
+
+<p>
+Identifique quais produtos apresentam maior representatividade.
+</p>
+
+</div>
+
+<h2>Etapa 8 - Página Canais de Venda</h2>
+
+<div class="etapa">
+
+<p>
+Crie uma página chamada:
+</p>
+
+<div class="box">
+Canais
+</div>
+
+<p>
+Compare os resultados dos canais:
+</p>
+
+<ul>
+<li>Loja Física</li>
+<li>E-commerce</li>
+</ul>
+
+<p>
+Utilize gráficos de barras, colunas ou pizza.
+</p>
+
+</div>
+
+<h2>Etapa 9 - Dashboard Executivo</h2>
+
+<div class="etapa">
+
+<p>
+Crie uma última página denominada:
+</p>
+
+<div class="box">
+Dashboard Executivo
+</div>
+
+<p>O dashboard deverá conter:</p>
+
+<ul>
+<li>Indicadores principais</li>
+<li>Vendas por Cidade</li>
+<li>Vendas por Categoria</li>
+<li>Vendas por Produto</li>
+<li>Vendas por Canal</li>
+</ul>
+
+<p>Adicionar segmentações de dados:</p>
+
+<ul>
+<li>Cidade</li>
+<li>Produto</li>
+<li>Categoria</li>
+<li>Segmento</li>
+</ul>
+
+</div>
+
+<h2>Perguntas para Análise</h2>
+
+<div class="box">
+
+<ol>
+<li>Qual cidade apresenta maior volume de vendas?</li>
+<li>Qual categoria possui maior participação?</li>
+<li>Qual produto mais aparece nas vendas?</li>
+<li>O e-commerce vende mais que a loja física?</li>
+<li>Qual segmento possui mais clientes?</li>
+<li>Há concentração de vendas em determinadas cidades?</li>
+<li>Quais oportunidades de crescimento você identifica?</li>
+</ol>
+
+</div>
+
+<h2>Desafio Final</h2>
+
+<div class="box">
+
+<p>
+Imagine que você faz parte da equipe de Business Intelligence da TechMax.
+</p>
+
+<p>
+Elabore uma breve apresentação para a diretoria contendo:
+</p>
+
+<ul>
+<li>Principais descobertas obtidas com os dados</li>
+<li>Pontos fortes observados</li>
+<li>Pontos de atenção identificados</li>
+<li>Recomendações para aumentar as vendas</li>
+</ul>
+
+<p>
+A apresentação deve ser baseada nas visualizações construídas no Power BI.
+</p>
+
+</div>
+
+<h2>Entregáveis</h2>
+
+<div class="box">
+
+<ul>
+<li>Arquivo PBIX</li>
+<li>Modelo Relacional</li>
+<li>Dashboard Executivo</li>
+<li>Respostas das perguntas propostas</li>
+<li>Conclusões gerenciais</li>
+</ul>
+
+</div>
+
+<h2>Critérios de Avaliação</h2>
+
+<div class="box">
+
+<ul>
+<li>Importação correta dos dados</li>
+<li>Tratamento das inconsistências</li>
+<li>Relacionamentos entre tabelas</li>
+<li>Qualidade das visualizações</li>
+<li>Organização do dashboard</li>
+<li>Capacidade de interpretação dos resultados</li>
+<li>Conclusões apresentadas</li>
+</ul>
+
+</div>
+
+<h2>Reflexão Final</h2>
+
+<div class="box">
+
+<p>
+Business Intelligence não consiste apenas em criar gráficos.
+</p>
+
+<p>
+O verdadeiro desafio está em transformar dados brutos em informações capazes de apoiar decisões estratégicas.
+</p>
+
+<p>
+Por trás de qualquer dashboard existe um trabalho de integração, organização, validação e interpretação dos dados.
+</p>
+
+<p>
+Dados → Informação → Conhecimento → Decisão → Resultado
+</p>
+
+</div>
+
+<footer>
+Tecnologia da Informação e Business Intelligence<br>
+Prof. Max Streicher Vallim
+</footer>
+
+</body>
+</html>
