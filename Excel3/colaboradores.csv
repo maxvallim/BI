@@ -1,0 +1,51 @@
+ID_Colaborador,Nome,Sexo,Data_Admissao,Cargo,Departamento,Cidade,Salario
+1,Ana Lima,F,2018-04-13,Supervisor Comercial,Comercial,Piracicaba,3200
+2,Pedro Mendes,M,2019-02-24,Assistente RH,RH,Sorocaba,5500
+3,Carlos Souza,M,2018-05-03,Assistente RH,RH,Piracicaba,3200
+4,Mariana Ribeiro,F,2024-10-01,Analista RH,RH,Sorocaba,3200
+5,Lucas Ribeiro,M,2022-09-15,Auxiliar Financeiro,Financeiro,São Paulo,6800
+6,Fernanda Santos,F,2018-01-27,Analista Financeiro,Financeiro,São Paulo,4200
+7,Julio Santos,M,2019-09-29,Auxiliar Financeiro,Financeiro,Ribeirão Preto,2800
+8,Patricia Lima,F,2022-04-06,Assistente RH,RH,Ribeirão Preto,4200
+9,Rafael Gomes,M,2020-12-19,Analista RH,RH,São Paulo,6800
+10,Camila Lima,F,2022-03-31,Assistente RH,RH,Sorocaba,4200
+11,Bruno Gomes,M,2022-01-21,Auxiliar Financeiro,Financeiro,Campinas,2800
+12,Juliana Alves,F,2021-03-31,Assistente RH,RH,Piracicaba,2800
+13,Felipe Pereira,F,2021-02-12,Desenvolvedor,TI,Ribeirão Preto,3200
+14,Aline Oliveira,F,2021-12-26,Auxiliar Financeiro,Financeiro,Ribeirão Preto,8800
+15,Rodrigo Lima,M,2024-10-31,Analista Financeiro,Financeiro,Sorocaba,8800
+16,Beatriz Alves,M,2019-11-01,Desenvolvedor,TI,São Paulo,4200
+17,Daniel Ribeiro,M,2020-06-18,Assistente Comercial,Comercial,Campinas,3200
+18,Larissa Souza,F,2021-07-16,Analista TI,TI,Ribeirão Preto,2800
+19,Thiago Alves,M,2024-05-12,Assistente Comercial,Comercial,Piracicaba,8800
+20,Renata Costa,F,2022-06-09,Desenvolvedor,TI,Piracicaba,4200
+21,Gustavo Mendes,M,2020-10-07,Supervisor Comercial,Comercial,Sorocaba,5500
+22,Paula Gomes,F,2022-06-24,Assistente Comercial,Comercial,Piracicaba,3200
+23,Vinicius Ribeiro,M,2023-07-15,Assistente RH,RH,Campinas,2800
+24,Elaine Mendes,F,2025-01-14,Analista Financeiro,Financeiro,São Paulo,6800
+25,Ricardo Lima,M,2022-04-26,Analista TI,TI,Sorocaba,5500
+26,Sandra Ribeiro,F,2020-10-26,Analista RH,RH,Campinas,8800
+27,Leandro Ribeiro,M,2020-12-28,Assistente Comercial,Comercial,Campinas,4200
+28,Vanessa Pereira,F,2019-10-10,Desenvolvedor,TI,Campinas,8800
+29,Eduardo Santos,M,2023-08-13,Analista Financeiro,Financeiro,Sorocaba,2800
+30,Tatiane Santos,F,2025-03-02,Auxiliar Financeiro,Financeiro,Piracicaba,4200
+31,Marcelo Mendes,M,2024-01-19,Analista RH,RH,Sorocaba,4200
+32,Priscila Costa,F,2018-03-21,Assistente RH,RH,Ribeirão Preto,4200
+33,Anderson Alves,M,2018-08-26,Auxiliar Financeiro,Financeiro,Sorocaba,2800
+34,Carolina Lima,F,2026-03-17,Desenvolvedor,TI,Campinas,6800
+35,Diego Mendes,M,2019-06-10,Desenvolvedor,TI,Sorocaba,3200
+36,Fabiana Santos,F,2023-12-02,Analista TI,TI,Piracicaba,6800
+37,Leonardo Alves,M,2025-12-30,Supervisor Comercial,Comercial,São Paulo,8800
+38,Michele Oliveira,F,2022-11-30,Desenvolvedor,TI,Campinas,3200
+39,Gabriel Alves,M,2018-09-20,Assistente Comercial,Comercial,Campinas,6800
+40,Rosana Ribeiro,F,2020-07-31,Auxiliar Financeiro,Financeiro,Campinas,2800
+41,Igor Souza,M,2020-07-26,Assistente RH,RH,Campinas,4200
+42,Bianca Lima,F,2023-10-07,Auxiliar Financeiro,Financeiro,Ribeirão Preto,8800
+43,Henrique Costa,F,2020-05-27,Analista Financeiro,Financeiro,Sorocaba,6800
+44,Natalia Costa,F,2020-09-22,Desenvolvedor,TI,São Paulo,3200
+45,Caio Lima,M,2019-02-02,Analista TI,TI,Ribeirão Preto,5500
+46,Amanda Pereira,F,2023-03-28,Analista RH,RH,Campinas,2800
+47,Vitor Pereira,M,2026-03-02,Assistente Comercial,Comercial,Campinas,3200
+48,Simone Alves,F,2020-02-19,Desenvolvedor,TI,Piracicaba,5500
+49,Matheus Mendes,M,2021-02-14,Desenvolvedor,TI,Piracicaba,2800
+50,Cristina Costa,F,2024-03-04,Assistente RH,RH,Campinas,8800
