@@ -1,0 +1,51 @@
+ID_Colaborador;Nome;Sexo;Data_Admissao;Cargo;Departamento;Cidade; Salario 
+1;Ana Lima;F;13/04/2018;Supervisor Comercial;Comercial;Piracicaba; 3.300,00 
+2;Pedro Mendes;M;24/02/2019;Assistente RH;RH;Sorocaba; 5.500,00 
+3;Carlos Souza;M;03/05/2018;Assistente RH;RH;Piracicaba; 3.200,00 
+4;Mariana Ribeiro;F;01/10/2024;Analista RH;RH;Sorocaba; 3.200,00 
+5;Lucas Ribeiro;M;15/09/2022;Auxiliar Financeiro;Financeiro;São Paulo; 6.800,00 
+6;Fernanda Santos;F;27/01/2018;Analista Financeiro;Financeiro;São Paulo; 4.350,00 
+7;Julio Santos;M;29/09/2019;Auxiliar Financeiro;Financeiro;Ribeirão Preto; 2.800,00 
+8;Patricia Lima;F;06/04/2022;Assistente RH;RH;Ribeirão Preto; 4.200,00 
+9;Rafael Gomes;M;19/12/2020;Analista RH;RH;São Paulo; 6.800,00 
+10;Camila Lima;F;31/03/2022;Assistente RH;RH;Sorocaba; 4.200,00 
+11;Bruno Gomes;M;21/01/2022;Auxiliar Financeiro;Financeiro;Campinas; 2.900,00 
+12;Juliana Alves;F;31/03/2021;Assistente RH;RH;Piracicaba; 2.800,00 
+13;Felipe Pereira;F;12/02/2021;Desenvolvedor;TI;Ribeirão Preto; 3.200,00 
+14;Aline Oliveira;F;26/12/2021;Auxiliar Financeiro;Financeiro;Ribeirão Preto; 9.000,00 
+15;Rodrigo Lima;M;31/10/2024;Analista Financeiro;Financeiro;Sorocaba; 9.500,00 
+16;Beatriz Alves;M;01/11/2019;Desenvolvedor;TI;São Paulo; 4.200,00 
+17;Daniel Ribeiro;M;18/06/2020;Assistente Comercial;Comercial;Campinas; 3.300,00 
+18;Larissa Souza;F;16/07/2021;Analista TI;TI;Ribeirão Preto; 2.800,00 
+19;Thiago Alves;M;12/05/2024;Assistente Comercial;Comercial;Piracicaba; 8.850,00 
+20;Renata Costa;F;09/06/2022;Desenvolvedor;TI;Piracicaba; 4.200,00 
+21;Gustavo Mendes;M;07/10/2020;Supervisor Comercial;Comercial;Sorocaba; 5.400,00 
+22;Paula Gomes;F;24/06/2022;Assistente Comercial;Comercial;Piracicaba; 3.200,00 
+23;Vinicius Ribeiro;M;15/07/2023;Assistente RH;RH;Campinas; 2.800,00 
+24;Elaine Mendes;F;14/01/2025;Analista Financeiro;Financeiro;São Paulo; 6.900,00 
+25;Ricardo Lima;M;26/04/2022;Analista TI;TI;Sorocaba; 5.600,00 
+26;Sandra Ribeiro;F;26/10/2020;Analista RH;RH;Campinas; 8.800,00 
+27;Leandro Ribeiro;M;28/12/2020;Assistente Comercial;Comercial;Campinas; 4.200,00 
+28;Vanessa Pereira;F;10/10/2019;Desenvolvedor;TI;Campinas; 8.800,00 
+29;Eduardo Santos;M;13/08/2023;Analista Financeiro;Financeiro;Sorocaba; 2.800,00 
+30;Tatiane Santos;F;02/03/2025;Auxiliar Financeiro;Financeiro;Piracicaba; 4.200,00 
+31;Marcelo Mendes;M;19/01/2024;Analista RH;RH;Sorocaba; 4.300,00 
+32;Priscila Costa;F;21/03/2018;Assistente RH;RH;Ribeirão Preto; 4.400,00 
+33;Anderson Alves;M;26/08/2018;Auxiliar Financeiro;Financeiro;Sorocaba; 2.800,00 
+34;Carolina Lima;F;17/03/2026;Desenvolvedor;TI;Campinas; 6.800,00 
+35;Diego Mendes;M;10/06/2019;Desenvolvedor;TI;Sorocaba; 3.200,00 
+36;Fabiana Santos;F;02/12/2023;Analista TI;TI;Piracicaba; 6.800,00 
+37;Leonardo Alves;M;30/12/2025;Supervisor Comercial;Comercial;São Paulo; 8.800,00 
+38;Michele Oliveira;F;30/11/2022;Desenvolvedor;TI;Campinas; 3.200,00 
+39;Gabriel Alves;M;20/09/2018;Assistente Comercial;Comercial;Campinas; 6.900,00 
+40;Rosana Ribeiro;F;31/07/2020;Auxiliar Financeiro;Financeiro;Campinas; 2.800,00 
+41;Igor Souza;M;26/07/2020;Assistente RH;RH;Campinas; 5.100,00 
+42;Bianca Lima;F;07/10/2023;Auxiliar Financeiro;Financeiro;Ribeirão Preto; 8.900,00 
+43;Henrique Costa;F;27/05/2020;Analista Financeiro;Financeiro;Sorocaba; 6.800,00 
+44;Natalia Costa;F;22/09/2020;Desenvolvedor;TI;São Paulo; 3.200,00 
+45;Caio Lima;M;02/02/2019;Analista TI;TI;Ribeirão Preto; 5.500,00 
+46;Amanda Pereira;F;28/03/2023;Analista RH;RH;Campinas; 2.800,00 
+47;Vitor Pereira;M;02/03/2026;Assistente Comercial;Comercial;Campinas; 3.200,00 
+48;Simone Alves;F;19/02/2020;Desenvolvedor;TI;Piracicaba; 5.500,00 
+49;Matheus Mendes;M;14/02/2021;Desenvolvedor;TI;Piracicaba; 2.750,00 
+50;Cristina Costa;F;04/03/2024;Assistente RH;RH;Campinas; 8.750,00 
