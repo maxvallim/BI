@@ -1,0 +1,21 @@
+ID_Produto;Nome_Produto;Categoria;Tempo_Padrao_Minutos;Custo_Padrao
+1;Produto 01;Automotiva;23;189,26
+2;Produto 02;Agrícola;48;47,79
+3;Produto 03;Automotiva;106;189,06
+4;Produto 04;Automotiva;95;114,15
+5;Produto 05;Automotiva;31;66,38
+6;Produto 06;Automotiva;91;61,73
+7;Produto 07;Hidráulica;48;120,56
+8;Produto 08;Industrial;20;193,32
+9;Produto 09;Agrícola;109;114,31
+10;Produto 10;Industrial;39;65,6
+11;Produto 11;Industrial;33;36,8
+12;Produto 12;Automotiva;65;214,16
+13;Produto 13;Industrial;25;186,49
+14;Produto 14;Automotiva;68;33,52
+15;Produto 15;Industrial;100;160,35
+16;Produto 16;Industrial;93;60,19
+17;Produto 17;Automotiva;25;170,4
+18;Produto 18;Industrial;30;216
+19;Produto 19;Automotiva;68;80,32
+20;Produto 20;Industrial;40;101,99

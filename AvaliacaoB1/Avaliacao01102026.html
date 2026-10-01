@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Case Final - BI Industrial - MetalForte</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    max-width: 1100px;
+    margin: 40px auto;
+    line-height: 1.6;
+    color:#333;
+}
+
+h1,h2,h3{
+    color:#0b5394;
+}
+
+table{
+    border-collapse: collapse;
+    width:100%;
+    margin-top:10px;
+}
+
+th,td{
+    border:1px solid #ccc;
+    padding:10px;
+}
+
+th{
+    background:#eaf2f8;
+}
+
+.bloco{
+    background:#f8f9fa;
+    padding:15px;
+    border-left:5px solid #0b5394;
+    margin:20px 0;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Atividade Avaliativa - Business Intelligence</h1>
+
+<h2>Case Final: Indústria MetalForte</h2>
+
+<div class="bloco">
+<strong>Contexto Empresarial</strong><br><br>
+
+A MetalForte Indústria de Componentes fabrica peças metálicas destinadas aos setores automotivo e agrícola.
+A empresa possui diversas linhas de produção operando em turnos distintos e monitora diariamente informações
+relacionadas à produtividade, qualidade, utilização da mão de obra e paradas de produção.
+
+A diretoria pretende implantar uma solução de Business Intelligence capaz de transformar os dados operacionais
+em informações estratégicas para apoiar a tomada de decisão.
+
+Atualmente os dados são exportados do ERP em arquivos CSV e deverão ser utilizados para construção de um
+modelo analítico e de dashboards gerenciais.
+</div>
+
+<h2>Dicionário de Dados</h2>
+
+<h3>
+<a href="produtos.csv" target="_blank">
+produtos.csv
+</a>
+</h3>
+
+<ul>
+<li>ID_Produto</li>
+<li>Nome_Produto</li>
+<li>Categoria</li>
+<li>Tempo_Padrao_Minutos</li>
+<li>Custo_Padrao</li>
+</ul>
+
+<h3>
+<a href="producao.csv" target="_blank">
+producao.csv
+</a>
+</h3>
+
+<ul>
+<li>ID_Producao</li>
+<li>Data</li>
+<li>ID_Produto</li>
+<li>Quantidade_Produzida</li>
+<li>Quantidade_Defeituosa</li>
+<li>Tempo_Real_Minutos</li>
+<li>Linha_Producao</li>
+</ul>
+
+<h3>
+<a href="operadores.csv" target="_blank">
+operadores.csv
+</a>
+</h3>
+
+<ul>
+<li>ID_Operador</li>
+<li>Nome</li>
+<li>Turno</li>
+<li>Setor</li>
+</ul>
+
+<h3>
+<a href="apontamentos.csv" target="_blank">
+apontamentos.csv
+</a>
+</h3>
+
+<ul>
+<li>ID_Apontamento</li>
+<li>ID_Producao</li>
+<li>ID_Operador</li>
+<li>Horas_Trabalhadas</li>
+</ul>
+
+<h3>
+<a href="paradas.csv" target="_blank">
+paradas.csv
+</a>
+</h3>
+
+<ul>
+<li>ID_Parada</li>
+<li>Data</li>
+<li>Linha_Producao</li>
+<li>Motivo</li>
+<li>Tempo_Parado_Minutos</li>
+</ul>
+
+<h2>Etapa 1 - ETL e Preparação dos Dados</h2>
+
+<p>
+Utilizando Power Query, realize o processo de importação e preparação dos dados.
+</p>
+
+<ul>
+<li>Importar os arquivos CSV;</li>
+<li>Verificar e corrigir inconsistências;</li>
+<li>Remover registros duplicados;</li>
+<li>Tratar valores nulos;</li>
+<li>Padronizar categorias e linhas de produção;</li>
+<li>Criar atributos auxiliares quando necessário;</li>
+<li>Garantir a qualidade e confiabilidade dos dados.</li>
+</ul>
+
+<h2>Etapa 2 - Modelagem dos Dados</h2>
+
+<p>
+Desenvolva um modelo de dados adequado para análise gerencial.
+</p>
+
+<ul>
+<li>Definir relacionamentos entre as tabelas;</li>
+<li>Garantir integridade dos relacionamentos.</li>
+</ul>
+
+<h2>Etapa 3 - Indicadores</h2>
+
+<p>
+Crie medidas e indicadores que permitam analisar o desempenho da produção.
+</p>
+
+<ul>
+<li>Produção Total;</li>
+<li>Produção por Linha;</li>
+<li>Produção por Categoria;</li>
+<li>Índice de Defeitos;</li>
+<li>Tempo Médio de Produção;</li>
+<li>Tempo Total de Paradas;</li>
+<li>Disponibilidade da Produção;</li>
+<li>Quantidade de Operadores Envolvidos;</li>
+<li>Ranking dos Produtos Produzidos;</li>
+<li>Indicadores adicionais julgados relevantes pelo grupo.</li>
+</ul>
+
+<h2>Etapa 4 - Dashboard Executivo</h2>
+
+<h3>Página 1 - Visão Geral</h3>
+
+<ul>
+<li>Produção Total</li>
+<li>Quantidade de Produtos Fabricados</li>
+<li>Índice de Defeitos</li>
+<li>Tempo Total de Paradas</li>
+<li>Produção por Mês</li>
+<li>Produção por Categoria</li>
+<li>Produção por Linha</li>
+</ul>
+
+<h3>Página 2 - Eficiência Operacional</h3>
+
+<ul>
+<li>Eficiência por Linha de Produção</li>
+<li>Eficiência por Produto</li>
+<li>Comparação entre Tempo Padrão e Tempo Real</li>
+<li>Produtividade dos Operadores</li>
+</ul>
+
+<h3>Página 3 - Qualidade</h3>
+
+<ul>
+<li>Produtos com Maior Índice de Defeitos</li>
+<li>Defeitos por Linha</li>
+<li>Evolução da Taxa de Defeitos</li>
+<li>Ranking de Qualidade</li>
+</ul>
+
+<h3>Página 4 - Paradas de Produção</h3>
+
+<ul>
+<li>Paradas por Motivo</li>
+<li>Tempo Parado por Linha</li>
+<li>Pareto das Causas de Parada</li>
+<li>Evolução Mensal das Paradas</li>
+</ul>
+
+<h2>Análise Gerencial</h2>
+
+<p>
+Ao final do projeto, elaborar uma análise executiva respondendo aos seguintes questionamentos:
+</p>
+
+<ol>
+<li>Qual linha de produção apresenta melhor desempenho?</li>
+<li>Qual produto apresenta maior índice de defeitos?</li>
+<li>Qual é o principal motivo das paradas?</li>
+<li>Quais categorias apresentam maior volume de produção?</li>
+<li>Existem gargalos operacionais?</li>
+<li>Quais ações poderiam aumentar a eficiência produtiva?</li>
+<li>Quais indicadores deveriam ser monitorados mensalmente pela diretoria?</li>
+</ol>
+
+<h2>Entrega</h2>
+
+<ul>
+<li>Arquivo Power BI (.pbix);</li>
+<li>Dashboard completo;</li>
+<li>Modelo de dados implementado;</li>
+<li>Relatório contendo a análise gerencial.</li>
+</ul>
+
+</body>
+</html>

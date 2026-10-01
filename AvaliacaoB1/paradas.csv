@@ -1,0 +1,291 @@
+ID_Parada;Data;Linha_Producao;Motivo;Tempo_Parado_Minutos
+1;2026-01-01;Linha D;Setup;165
+2;2026-01-01;Linha B;Falta de Material;113
+3;2026-01-01;Linha B;Setup;167
+4;2026-01-02;Linha D;Manutenção Preventiva;179
+5;2026-01-02;Linha D;Manutenção Preventiva;240
+6;2026-01-02;Linha D;Falha Mecânica;228
+7;2026-01-03;Linha C;Falta de Material;85
+8;2026-01-03;Linha B;Falha Elétrica;171
+9;2026-01-05;Linha C;Falha Mecânica;162
+10;2026-01-05;Linha B;Falta de Material;104
+11;2026-01-10;Linha B;Falha Mecânica;109
+12;2026-01-10;Linha C;Falha Mecânica;234
+13;2026-01-10;Linha D;Setup;121
+14;2026-01-11;Linha C;Setup;172
+15;2026-01-12;Linha D;Manutenção Preventiva;177
+16;2026-01-14;Linha A;Falta de Material;117
+17;2026-01-14;Linha D;Falha Mecânica;227
+18;2026-01-16;Linha D;Setup;99
+19;2026-01-16;Linha C;Manutenção Preventiva;22
+20;2026-01-16;Linha B;Falha Mecânica;183
+21;2026-01-17;Linha A;Falha Elétrica;123
+22;2026-01-17;Linha A;Manutenção Preventiva;110
+23;2026-01-17;Linha A;Falha Mecânica;113
+24;2026-01-19;Linha A;Falha Elétrica;194
+25;2026-01-19;Linha A;Manutenção Preventiva;78
+26;2026-01-20;Linha C;Falta de Material;44
+27;2026-01-20;Linha D;Falha Mecânica;108
+28;2026-01-20;Linha B;Falta de Material;115
+29;2026-01-21;Linha B;Falha Mecânica;39
+30;2026-01-22;Linha D;Falta de Material;98
+31;2026-01-23;Linha C;Manutenção Preventiva;116
+32;2026-01-23;Linha B;Setup;113
+33;2026-01-25;Linha A;Falta de Material;139
+34;2026-01-25;Linha A;Falha Mecânica;137
+35;2026-01-27;Linha C;Falha Mecânica;210
+36;2026-01-27;Linha B;Setup;123
+37;2026-01-27;Linha A;Falha Mecânica;119
+38;2026-01-28;Linha D;Falha Mecânica;102
+39;2026-01-29;Linha D;Falta de Material;163
+40;2026-01-29;Linha C;Falha Mecânica;21
+41;2026-01-30;Linha B;Manutenção Preventiva;67
+42;2026-01-30;Linha D;Falha Elétrica;197
+43;2026-01-30;Linha A;Setup;225
+44;2026-01-31;Linha A;Falha Mecânica;21
+45;2026-01-31;Linha A;Falta de Material;61
+46;2026-02-01;Linha B;Falha Mecânica;81
+47;2026-02-01;Linha B;Falha Mecânica;229
+48;2026-02-02;Linha B;Falha Mecânica;194
+49;2026-02-02;Linha D;Falha Mecânica;240
+50;2026-02-02;Linha B;Falha Mecânica;30
+51;2026-02-03;Linha B;Falha Mecânica;215
+52;2026-02-04;Linha D;Falha Elétrica;137
+53;2026-02-04;Linha B;Falta de Material;171
+54;2026-02-04;Linha D;Falha Mecânica;132
+55;2026-02-05;Linha B;Falta de Material;201
+56;2026-02-06;Linha B;Setup;106
+57;2026-02-08;Linha A;Falha Mecânica;66
+58;2026-02-10;Linha A;Falta de Material;20
+59;2026-02-10;Linha B;Falha Mecânica;68
+60;2026-02-11;Linha B;Falta de Material;95
+61;2026-02-12;Linha A;Falha Elétrica;146
+62;2026-02-13;Linha D;Setup;22
+63;2026-02-14;Linha A;Setup;240
+64;2026-02-14;Linha C;Falha Mecânica;88
+65;2026-02-15;Linha D;Setup;34
+66;2026-02-16;Linha A;Falha Mecânica;196
+67;2026-02-16;Linha A;Falha Mecânica;76
+68;2026-02-19;Linha B;Setup;82
+69;2026-02-19;Linha D;Falta de Material;67
+70;2026-02-19;Linha B;Falha Elétrica;205
+71;2026-02-20;Linha D;Falta de Material;139
+72;2026-02-21;Linha D;Falha Mecânica;39
+73;2026-02-23;Linha D;Falha Mecânica;96
+74;2026-02-23;Linha D;Manutenção Preventiva;225
+75;2026-02-23;Linha C;Manutenção Preventiva;162
+76;2026-02-25;Linha C;Falha Mecânica;28
+77;2026-02-26;Linha C;Falha Mecânica;148
+78;2026-02-26;Linha A;Manutenção Preventiva;93
+79;2026-02-28;Linha A;Setup;96
+80;2026-02-28;Linha C;Manutenção Preventiva;146
+81;2026-02-28;Linha D;Manutenção Preventiva;185
+82;2026-03-01;Linha B;Setup;113
+83;2026-03-01;Linha B;Falha Mecânica;127
+84;2026-03-01;Linha D;Falha Mecânica;20
+85;2026-03-02;Linha B;Manutenção Preventiva;30
+86;2026-03-03;Linha C;Falha Mecânica;150
+87;2026-03-03;Linha D;Falta de Material;223
+88;2026-03-03;Linha C;Setup;223
+89;2026-03-04;Linha D;Setup;92
+90;2026-03-04;Linha D;Falha Mecânica;172
+91;2026-03-04;Linha A;Falta de Material;73
+92;2026-03-05;Linha D;Falha Elétrica;198
+93;2026-03-06;Linha A;Setup;173
+94;2026-03-06;Linha D;Falha Mecânica;200
+95;2026-03-08;Linha C;Setup;23
+96;2026-03-08;Linha B;Falta de Material;224
+97;2026-03-09;Linha D;Setup;218
+98;2026-03-10;Linha B;Falha Mecânica;53
+99;2026-03-10;Linha D;Falha Elétrica;85
+100;2026-03-12;Linha A;Manutenção Preventiva;203
+101;2026-03-14;Linha C;Falta de Material;163
+102;2026-03-14;Linha A;Falha Mecânica;24
+103;2026-03-16;Linha B;Falta de Material;131
+104;2026-03-17;Linha C;Falha Elétrica;229
+105;2026-03-18;Linha B;Falha Mecânica;231
+106;2026-03-18;Linha D;Falha Mecânica;203
+107;2026-03-18;Linha D;Setup;198
+108;2026-03-20;Linha B;Falha Elétrica;52
+109;2026-03-21;Linha D;Falta de Material;159
+110;2026-03-21;Linha C;Manutenção Preventiva;188
+111;2026-03-21;Linha A;Manutenção Preventiva;153
+112;2026-03-22;Linha B;Falta de Material;207
+113;2026-03-22;Linha C;Falta de Material;85
+114;2026-03-22;Linha C;Falha Mecânica;139
+115;2026-03-23;Linha C;Manutenção Preventiva;193
+116;2026-03-23;Linha D;Falta de Material;195
+117;2026-03-23;Linha D;Falta de Material;165
+118;2026-03-24;Linha B;Setup;158
+119;2026-03-26;Linha A;Falha Mecânica;121
+120;2026-03-26;Linha A;Manutenção Preventiva;159
+121;2026-03-26;Linha D;Falta de Material;56
+122;2026-03-28;Linha A;Falha Mecânica;21
+123;2026-03-28;Linha C;Falha Mecânica;111
+124;2026-03-28;Linha D;Setup;195
+125;2026-03-29;Linha D;Falha Mecânica;190
+126;2026-03-29;Linha C;Falha Mecânica;212
+127;2026-03-30;Linha C;Falha Mecânica;64
+128;2026-03-30;Linha A;Falta de Material;90
+129;2026-03-30;Linha D;Manutenção Preventiva;118
+130;2026-03-31;Linha D;Falta de Material;227
+131;2026-03-31;Linha B;Setup;239
+132;2026-04-01;Linha A;Falta de Material;111
+133;2026-04-01;Linha C;Falha Mecânica;220
+134;2026-04-01;Linha B;Falha Mecânica;118
+135;2026-04-02;Linha A;Setup;86
+136;2026-04-02;Linha D;Setup;170
+137;2026-04-02;Linha B;Falha Elétrica;21
+138;2026-04-03;Linha D;Falha Mecânica;248
+139;2026-04-03;Linha B;Manutenção Preventiva;218
+140;2026-04-04;Linha A;Setup;30
+141;2026-04-04;Linha D;Falta de Material;82
+142;2026-04-04;Linha C;Falha Mecânica;358
+143;2026-04-05;Linha D;Falha Mecânica;148
+144;2026-04-05;Linha C;Manutenção Preventiva;31
+145;2026-04-05;Linha B;Setup;158
+146;2026-04-06;Linha C;Falha Elétrica;218
+147;2026-04-07;Linha A;Falha Mecânica;382
+148;2026-04-08;Linha D;Falta de Material;230
+149;2026-04-08;Linha D;Falta de Material;236
+150;2026-04-08;Linha C;Manutenção Preventiva;89
+151;2026-04-08;Linha C;Falha Elétrica;162
+152;2026-04-09;Linha C;Falha Mecânica;238
+153;2026-04-10;Linha D;Falha Mecânica;60
+154;2026-04-11;Linha D;Falha Mecânica;434
+155;2026-04-11;Linha C;Setup;145
+156;2026-04-12;Linha B;Falta de Material;147
+157;2026-04-13;Linha A;Falta de Material;106
+158;2026-04-13;Linha A;Manutenção Preventiva;130
+159;2026-04-13;Linha C;Falha Mecânica;354
+160;2026-04-14;Linha A;Manutenção Preventiva;227
+161;2026-04-14;Linha C;Setup;43
+162;2026-04-14;Linha B;Falha Elétrica;173
+163;2026-04-15;Linha A;Falta de Material;176
+164;2026-04-15;Linha C;Falta de Material;236
+165;2026-04-15;Linha A;Falha Mecânica;156
+166;2026-04-16;Linha C;Falta de Material;140
+167;2026-04-16;Linha C;Falta de Material;137
+168;2026-04-16;Linha C;Falta de Material;49
+169;2026-04-16;Linha C;Manutenção Preventiva;128
+170;2026-04-17;Linha B;Falha Mecânica;296
+171;2026-04-17;Linha D;Setup;101
+172;2026-04-18;Linha B;Manutenção Preventiva;127
+173;2026-04-18;Linha B;Falha Mecânica;432
+174;2026-04-18;Linha A;Falha Mecânica;258
+175;2026-04-19;Linha C;Setup;116
+176;2026-04-19;Linha D;Falha Mecânica;254
+177;2026-04-19;Linha B;Falha Mecânica;304
+178;2026-04-20;Linha B;Setup;133
+179;2026-04-21;Linha B;Falha Mecânica;132
+180;2026-04-22;Linha A;Falha Mecânica;454
+181;2026-04-23;Linha C;Falta de Material;58
+182;2026-04-23;Linha C;Setup;117
+183;2026-04-23;Linha C;Setup;164
+184;2026-04-23;Linha A;Falha Mecânica;320
+185;2026-04-24;Linha B;Falha Elétrica;80
+186;2026-04-24;Linha B;Falta de Material;56
+187;2026-04-24;Linha D;Falta de Material;50
+188;2026-04-24;Linha A;Falta de Material;168
+189;2026-04-25;Linha D;Setup;78
+190;2026-04-25;Linha A;Falta de Material;166
+191;2026-04-26;Linha D;Setup;223
+192;2026-04-27;Linha D;Setup;224
+193;2026-04-27;Linha C;Manutenção Preventiva;161
+194;2026-04-27;Linha C;Setup;134
+195;2026-04-28;Linha D;Manutenção Preventiva;222
+196;2026-04-28;Linha C;Falha Mecânica;200
+197;2026-04-28;Linha A;Falha Mecânica;308
+198;2026-04-29;Linha B;Setup;211
+199;2026-04-30;Linha A;Falta de Material;110
+200;2026-04-30;Linha A;Falha Mecânica;348
+201;2026-04-30;Linha C;Falta de Material;97
+202;2026-04-30;Linha D;Falta de Material;175
+203;2026-05-01;Linha B;Falha Mecânica;160
+204;2026-05-02;Linha D;Falta de Material;133
+205;2026-05-02;Linha B;Falha Mecânica;25
+206;2026-05-04;Linha B;Falha Mecânica;58
+207;2026-05-04;Linha A;Falta de Material;194
+208;2026-05-04;Linha A;Falha Mecânica;181
+209;2026-05-05;Linha A;Setup;160
+210;2026-05-05;Linha D;Falha Mecânica;165
+211;2026-05-07;Linha D;Setup;26
+212;2026-05-09;Linha A;Falha Mecânica;214
+213;2026-05-09;Linha D;Setup;32
+214;2026-05-09;Linha D;Falta de Material;76
+215;2026-05-10;Linha D;Falta de Material;56
+216;2026-05-11;Linha D;Falha Mecânica;200
+217;2026-05-12;Linha A;Falta de Material;136
+218;2026-05-12;Linha A;Falha Mecânica;100
+219;2026-05-13;Linha D;Falta de Material;137
+220;2026-05-13;Linha B;Setup;220
+221;2026-05-13;Linha C;Falha Elétrica;68
+222;2026-05-14;Linha D;Falta de Material;23
+223;2026-05-14;Linha A;Falha Mecânica;209
+224;2026-05-15;Linha B;Setup;188
+225;2026-05-17;Linha A;Falha Mecânica;181
+226;2026-05-17;Linha C;Falta de Material;216
+227;2026-05-18;Linha C;Falta de Material;28
+228;2026-05-18;Linha D;Manutenção Preventiva;43
+229;2026-05-18;Linha B;Falta de Material;192
+230;2026-05-19;Linha C;Setup;91
+231;2026-05-19;Linha B;Manutenção Preventiva;114
+232;2026-05-22;Linha A;Manutenção Preventiva;143
+233;2026-05-22;Linha A;Falta de Material;199
+234;2026-05-23;Linha C;Falha Elétrica;185
+235;2026-05-25;Linha A;Falha Mecânica;133
+236;2026-05-26;Linha A;Falta de Material;120
+237;2026-05-26;Linha D;Setup;169
+238;2026-05-27;Linha A;Falta de Material;157
+239;2026-05-27;Linha B;Setup;56
+240;2026-05-27;Linha C;Falta de Material;97
+241;2026-05-28;Linha C;Falha Mecânica;94
+242;2026-05-28;Linha C;Falha Mecânica;141
+243;2026-05-30;Linha D;Setup;128
+244;2026-05-31;Linha D;Setup;36
+245;2026-05-31;Linha C;Falha Mecânica;54
+246;2026-06-01;Linha B;Falha Mecânica;147
+247;2026-06-01;Linha D;Setup;110
+248;2026-06-01;Linha B;Falha Mecânica;200
+249;2026-06-02;Linha A;Falta de Material;79
+250;2026-06-03;Linha B;Falha Elétrica;218
+251;2026-06-03;Linha A;Setup;54
+252;2026-06-03;Linha C;Falha Mecânica;114
+253;2026-06-04;Linha B;Falha Elétrica;78
+254;2026-06-05;Linha C;Falha Mecânica;116
+255;2026-06-07;Linha B;Falta de Material;85
+256;2026-06-07;Linha D;Falta de Material;224
+257;2026-06-09;Linha C;Falha Elétrica;96
+258;2026-06-09;Linha D;Setup;236
+259;2026-06-09;Linha B;Setup;119
+260;2026-06-11;Linha C;Setup;166
+261;2026-06-11;Linha A;Falta de Material;186
+262;2026-06-12;Linha A;Falha Mecânica;176
+263;2026-06-12;Linha A;Falha Mecânica;133
+264;2026-06-12;Linha B;Falha Mecânica;61
+265;2026-06-15;Linha C;Falta de Material;38
+266;2026-06-15;Linha B;Setup;45
+267;2026-06-15;Linha C;Setup;96
+268;2026-06-16;Linha C;Falha Mecânica;34
+269;2026-06-16;Linha D;Setup;72
+270;2026-06-16;Linha A;Setup;93
+271;2026-06-17;Linha B;Falta de Material;204
+272;2026-06-18;Linha B;Falha Mecânica;183
+273;2026-06-18;Linha A;Falha Elétrica;217
+274;2026-06-18;Linha C;Setup;128
+275;2026-06-20;Linha A;Setup;67
+276;2026-06-20;Linha D;Falta de Material;68
+277;2026-06-20;Linha A;Falha Mecânica;137
+278;2026-06-21;Linha D;Falha Elétrica;125
+279;2026-06-21;Linha B;Falha Elétrica;20
+280;2026-06-21;Linha D;Falha Elétrica;211
+281;2026-06-22;Linha A;Falha Mecânica;227
+282;2026-06-23;Linha B;Setup;234
+283;2026-06-24;Linha C;Falta de Material;76
+284;2026-06-27;Linha B;Setup;128
+285;2026-06-28;Linha A;Falta de Material;178
+286;2026-06-28;Linha A;Manutenção Preventiva;135
+287;2026-06-28;Linha C;Falha Mecânica;182
+288;2026-06-29;Linha C;Setup;50
+289;2026-06-29;Linha B;Falha Mecânica;177
+290;2026-06-30;Linha C;Falha Mecânica;239
