@@ -1,0 +1,51 @@
+id_os,data,mecanico,cliente,servico,valor,status
+1,2025-01-03,CARLOS,João Silva,Troca de Óleo,180,Concluída
+2,2025-01-05,ANA,Maria Souza,Revisão Completa,1200,Concluída
+3,2025-01-06,CARLOS,Pedro Santos,Freios,450,Concluída
+4,2025-01-07,LUCAS,Carlos Lima,Suspensão,850,Concluída
+5,2025-01-08,ANA,Juliana Costa,Troca de Pneus,700,Concluída
+6,2025-01-09,CARLOS,Fernando Alves,Alinhamento,120,Concluída
+7,2025-01-10,LUCAS,Ana Paula,Bateria,420,Concluída
+8,2025-01-11,ANA,Rafael Gomes,Motor,3200,Concluída
+9,2025-01-12,CARLOS,Patrícia Rocha,Revisão Completa,1100,Concluída
+10,2025-01-15,LUCAS,Bruno Matos,Freios,560,Concluída
+11,2025-02-01,CARLOS,Lucas Vieira,Troca de Óleo,180,Concluída
+12,2025-02-03,ANA,Camila Dias,Suspensão,920,Concluída
+13,2025-02-04,LUCAS,Gustavo Melo,Bateria,380,Concluída
+14,2025-02-05,CARLOS,André Ribeiro,Motor,2800,Concluída
+15,2025-02-06,ANA,Vanessa Cruz,Freios,490,Concluída
+16,2025-02-08,LUCAS,Ricardo Martins,Troca de Pneus,780,Concluída
+17,2025-02-09,CARLOS,Carla Mendes,Revisão Completa,1300,Concluída
+18,2025-02-10,ANA,Thiago Lopes,Alinhamento,110,Concluída
+19,2025-02-12,LUCAS,Sandra Reis,Suspensão,840,Concluída
+20,2025-02-14,CARLOS,Marcelo Pinto,Freios,530,Concluída
+21,2025-03-01,ANA,Felipe Duarte,Troca de Óleo,190,Concluída
+22,2025-03-02,LUCAS,Renata Moraes,Motor,4100,Concluída
+23,2025-03-03,CARLOS,Paulo Nunes,Bateria,390,Concluída
+24,2025-03-05,ANA,Denise Castro,Suspensão,890,Concluída
+25,2025-03-06,LUCAS,Leonardo Freitas,Freios,510,Concluída
+26,2025-03-08,CARLOS,Eliane Rocha,Revisão Completa,1250,Concluída
+27,2025-03-09,ANA,Rogério Prado,Troca de Pneus,750,Concluída
+28,2025-03-10,LUCAS,Márcia Campos,Alinhamento,140,Concluída
+29,2025-03-12,CARLOS,Cesar Andrade,Motor,3600,Concluída
+30,2025-03-15,ANA,Priscila Gomes,Freios,470,Concluída
+31,2025-04-01,LUCAS,Daniel Silva,Troca de Óleo,175,Concluída
+32,2025-04-03,CARLOS,Luciana Alves,Suspensão,930,Concluída
+33,2025-04-04,ANA,Bruna Souza,Bateria,410,Concluída
+34,2025-04-05,LUCAS,Henrique Costa,Motor,2850,Concluída
+35,2025-04-06,CARLOS,Julio Barbosa,Freios,520,Concluída
+36,2025-04-08,ANA,Amanda Rocha,Revisão Completa,1190,Concluída
+37,2025-04-09,LUCAS,Marina Castro,Troca de Pneus,720,Concluída
+38,2025-04-11,CARLOS,Vitor Mendes,Alinhamento,130,Concluída
+39,2025-04-12,ANA,Diego Araujo,Suspensão,870,Aberta
+40,2025-04-13,LUCAS,Roberto Lima,Freios,560,Aberta
+41,2025-05-01,CARLOS,Gabriel Prado,Troca de Óleo,185,Concluída
+42,2025-05-02,ANA,Natália Freitas,Motor,3900,Concluída
+43,2025-05-03,LUCAS,Sergio Ramos,Bateria,400,Concluída
+44,2025-05-05,CARLOS,Tatiane Campos,Revisão Completa,1280,Concluída
+45,2025-05-06,ANA,Fabiana Oliveira,Freios,540,Concluída
+46,2025-05-07,LUCAS,Renan Costa,Suspensão,910,Concluída
+47,2025-05-09,CARLOS,Claudia Dias,Troca de Pneus,760,Concluída
+48,2025-05-10,ANA,Patrick Nunes,Alinhamento,120,Concluída
+49,2025-05-11,LUCAS,Eduardo Martins,Motor,3400,Aberta
+50,2025-05-12,CARLOS,Aline Ribeiro,Freios,480,Aberta

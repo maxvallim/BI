@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KNIME + Power BI - Tutorial Oficina Mecânica</title>
+
+<style>
+
+.links-recursos{
+    display:flex;
+    gap:15px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.btn-link{
+    display:inline-block;
+    background:#111;
+    color:#fff;
+    text-decoration:none;
+    padding:12px 20px;
+    border-radius:8px;
+    transition:0.3s;
+    font-weight:500;
+}
+
+.btn-link:hover{
+    background:#333;
+}
+
+:root{
+    --bg:#ffffff;
+    --text:#222222;
+    --muted:#666666;
+    --line:#e5e5e5;
+    --card:#fafafa;
+    --accent:#111111;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.container{
+    max-width:1100px;
+    margin:auto;
+    padding:50px 30px;
+}
+
+header{
+    text-align:center;
+    padding-bottom:40px;
+    border-bottom:2px solid var(--line);
+}
+
+header h1{
+    font-size:2.5rem;
+    font-weight:300;
+    letter-spacing:1px;
+}
+
+header p{
+    color:var(--muted);
+    margin-top:10px;
+}
+
+.section{
+    margin-top:50px;
+}
+
+.section h2{
+    font-size:1.8rem;
+    font-weight:500;
+    border-left:4px solid black;
+    padding-left:15px;
+    margin-bottom:20px;
+}
+
+.card{
+    background:var(--card);
+    border:1px solid var(--line);
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:20px;
+}
+
+.card h3{
+    margin-bottom:10px;
+}
+
+.flow{
+    text-align:center;
+    font-size:1.1rem;
+    margin:30px 0;
+    font-weight:600;
+}
+
+.flow span{
+    display:block;
+    margin:8px 0;
+}
+
+pre{
+    background:#f4f4f4;
+    border:1px solid #ddd;
+    padding:15px;
+    overflow:auto;
+    border-radius:8px;
+    margin-top:15px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+table th{
+    background:#111;
+    color:white;
+}
+
+table th,
+table td{
+    border:1px solid #ddd;
+    padding:12px;
+    text-align:left;
+}
+
+.step{
+    margin-bottom:25px;
+}
+
+.step-number{
+    background:#111;
+    color:white;
+    display:inline-block;
+    width:32px;
+    height:32px;
+    text-align:center;
+    line-height:32px;
+    border-radius:50%;
+    margin-right:10px;
+}
+
+footer{
+    margin-top:70px;
+    text-align:center;
+    color:var(--muted);
+    border-top:1px solid var(--line);
+    padding-top:20px;
+}
+
+.highlight{
+    background:#f0f0f0;
+    padding:3px 8px;
+    border-radius:4px;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+    <h1>KNIME + Power BI</h1>
+    <p>Tutorial Completo - Análise de Dados de uma Oficina Mecânica</p>
+</header>
+
+<section class="section">
+    <h2>Objetivo da Aula</h2>
+
+    <div class="card">
+        Demonstrar um fluxo completo de Business Intelligence utilizando:
+        <ul style="margin-top:10px;margin-left:20px;">
+            <li>KNIME para ETL e tratamento de dados</li>
+            <li>Power BI para visualização</li>
+            <li>CSV de uma oficina mecânica como fonte de dados</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Fluxo da Solução</h2>
+
+    <div class="card flow">
+        <span>CSV Oficina</span>
+        ↓
+        <span>KNIME</span>
+        ↓
+        <span>Tratamento dos Dados</span>
+        ↓
+        <span>Indicadores</span>
+        ↓
+        <span>CSV Analítico</span>
+        ↓
+        <span>Power BI</span>
+        ↓
+        <span>Dashboard Executivo</span>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Workflow KNIME</h2>
+
+    <div class="card">
+        <div class="flow">
+            CSV Reader<br>
+            ↓<br>
+            String to Date&Time<br>
+            ↓<br>
+            Rule Engine<br>
+            ↓<br>
+            GroupBy Mecânicos<br>
+            ↓<br>
+            GroupBy Serviços<br>
+            ↓<br>
+            GroupBy Mensal<br>
+            ↓<br>
+            CSV Writer
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Passo a Passo</h2>
+
+    <div class="card step">
+        <h3><span class="step-number">1</span>CSV Reader</h3>
+        <p>Importe o arquivo <strong>oficina.csv</strong>.</p>
+
+<pre>
+id_os
+data
+mecanico
+cliente
+servico
+valor
+status
+</pre>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">2</span>String to Date&Time</h3>
+        <p>Converter a coluna <strong>data</strong> para formato de data.</p>
+
+<pre>
+Formato: yyyy-MM-dd
+</pre>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">3</span>Rule Engine</h3>
+        <p>Criar categoria de faturamento.</p>
+
+<pre>
+$valor$ < 300 => "Baixo"
+
+$valor$ >= 300 AND $valor$ < 1000 => "Médio"
+
+TRUE => "Alto"
+</pre>
+
+        <table>
+            <tr>
+                <th>Valor</th>
+                <th>Faixa</th>
+            </tr>
+            <tr>
+                <td>180</td>
+                <td>Baixo</td>
+            </tr>
+            <tr>
+                <td>700</td>
+                <td>Médio</td>
+            </tr>
+            <tr>
+                <td>3200</td>
+                <td>Alto</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">4</span>GroupBy - Mecânicos</h3>
+
+        <p>Agrupar por:</p>
+
+<pre>
+mecanico
+</pre>
+
+        <p>Agregações:</p>
+
+<table>
+<tr>
+<th>Campo</th>
+<th>Operação</th>
+</tr>
+<tr>
+<td>id_os</td>
+<td>Count</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>Sum</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>Average</td>
+</tr>
+</table>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">5</span>GroupBy - Serviços</h3>
+
+        <table>
+<tr>
+<th>Campo</th>
+<th>Operação</th>
+</tr>
+<tr>
+<td>id_os</td>
+<td>Count</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>Sum</td>
+</tr>
+</table>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">6</span>Date&Time Extractor</h3>
+
+        <p>Extrair:</p>
+
+<pre>
+Ano
+Mês
+</pre>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">7</span>GroupBy - Faturamento Mensal</h3>
+
+        <table>
+<tr>
+<th>Agrupamento</th>
+<th>Operação</th>
+</tr>
+<tr>
+<td>Ano</td>
+<td>Group</td>
+</tr>
+<tr>
+<td>Mês</td>
+<td>Group</td>
+</tr>
+<tr>
+<td>valor</td>
+<td>Sum</td>
+</tr>
+<tr>
+<td>id_os</td>
+<td>Count</td>
+</tr>
+</table>
+
+    </div>
+
+    <div class="card step">
+        <h3><span class="step-number">8</span>CSV Writer</h3>
+
+<pre>
+ranking_mecanicos.csv
+servicos.csv
+faturamento_mensal.csv
+</pre>
+
+    </div>
+</section>
+
+<section class="section">
+    <h2>Power BI</h2>
+
+    <div class="card">
+        <h3>Página 1 - Visão Geral</h3>
+
+        <ul>
+            <li>Faturamento Total</li>
+            <li>Total de Ordens de Serviço</li>
+            <li>Ticket Médio</li>
+            <li>Quantidade de Mecânicos</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Página 2 - Ranking de Mecânicos</h3>
+
+        <ul>
+            <li>Gráfico de Colunas</li>
+            <li>Faturamento por Mecânico</li>
+            <li>Quantidade de Serviços por Mecânico</li>
+            <li>Ticket Médio por Mecânico</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Página 3 - Serviços</h3>
+
+        <ul>
+            <li>Participação dos Serviços</li>
+            <li>Faturamento por Serviço</li>
+            <li>Serviços mais Executados</li>
+        </ul>
+    </div>
+
+    <div class="card">
+        <h3>Página 4 - Evolução Temporal</h3>
+
+        <ul>
+            <li>Gráfico de Linha</li>
+            <li>Faturamento Mensal</li>
+            <li>Quantidade de OS por Mês</li>
+        </ul>
+    </div>
+</section>
+
+<section class="section">
+    <h2>Resultado Esperado</h2>
+
+    <div class="card">
+        Ao final da aula o aluno terá desenvolvido um processo completo de BI:
+        <br><br>
+
+        <span class="highlight">Extração</span> →
+        <span class="highlight">Tratamento</span> →
+        <span class="highlight">Modelagem</span> →
+        <span class="highlight">Indicadores</span> →
+        <span class="highlight">Dashboard</span>
+
+        <br><br>
+
+        utilizando KNIME e Power BI em conjunto.
+    </div>
+</section>
+
+<div class="card">
+    <h3>Arquivos Necessários</h3>
+
+    <p>
+        📄
+        <a href="faturamento_mensal.csv" download>
+            Baixar faturamento_mensal.csv
+        </a>
+    </p>
+
+    <p style="margin-top:10px;">
+        ⬇️
+        <a href="https://www.knime.com/downloads" target="_blank">
+            Download Gratuito do KNIME
+        </a>
+    </p>
+</div>
+
+<footer>
+    Tutorial KNIME + Power BI • Oficina Mecânica • Business Intelligence
+</footer>
+
+</div>
+
+</body>
+</html>
